@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q1 Skills Test</title>
+ <style>
+    img{
+    height:150px;
+    width: 150px;
+    display:block;
+    margin:auto;
+    border-radius: 10%;
+    }
+    h1{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align:center;
+    }
+    div{
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    input::placeholder {
+        color: rgb(128, 128, 128);
+        font-style: italic;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        width: auto;
+    }
+    .container1, .container2{
+    background: rgb(236, 233, 233);
+    padding: 20px;
+    border-radius: 12px;
+    width: 670px;
+    margin: 0 auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.387);
+    }
+    span{
+        font-weight: bold;
+        background-color: rgb(222, 220, 216);
+    }
+    p{
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        text-align: center;
+        font-style: italic;
+    }
+    body{
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        background-image: url('https://media.licdn.com/dms/image/v2/D5612AQE03WW0tnU2wg/article-cover_image-shrink_600_2000/article-cover_image-shrink_600_2000/0/1675014214058?e=2147483647&v=beta&t=ruspsL2Uk5GJzvBiz-cPI3656BwKEcMtAcDzTWs8Ato');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    #foot{
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        text-align: center;
+        background-color: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
+        text-align: center;
+        padding: 15px;
+        margin-top: 40px;
+        border-radius: 10px;
+    }
+    #btn{
+        background-color: rgb(66, 70, 139);
+        color: rgb(255, 255, 255);
+        padding: 10px 20px;
+        border: 2px solid rgb(255, 255, 255);
+        border-radius: 5px;
+        text-align: center;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.387);
+
+    }
+    #reset{
+        background-color: rgb(255, 255, 255);
+        color: rgb(66, 70, 139);
+        padding: 10px 20px;
+        border: 2px solid rgb(66, 70, 139);
+        border-radius: 5px;
+        text-align: center;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.387);
+    }
+    a{
+        color: rgb(66, 70, 139);
+        text-decoration: underline;
+    }
+    span1{
+        font-weight: bold;
+    }
+
+</style>   
+</head>
+
+<body>
+    <div class="container">
+        <div class="container1">
+            <header>
+                <img src="https://images.squarespace-cdn.com/content/v1/664c7ae50eea9c731b37e817/8b5611eb-ff3a-407f-9adc-e116a23373fc/OBMC+LOGO+2024-04.png" alt="OBMC Logo">
+                <h1>OBMC Robotics Club Application Form</h1>
+                <br>
+                <p>Welcome to the OBMC Robotics Club!  We are thrilled to have you here. <br> Please <span1>fill out</span1> the application form below to join our community of passionate robotics enthusiasts. <br> We look forward to reviewing your application and getting to know you better!</p>
+            </header>
+        </div>
+        <br>
+        <div class="container2">
+                <form action="">
+                    <br>
+                    <label for="name"><span>Full Name:</span></label>
+                    <br>
+                    <input type="name" id="name" name="name" placeholder="Enter your full name.." required>
+                    <br><br>
+                    <label for="email"><span>Email:</span></label>
+                    <br>
+                    <input type="email" id="email" name="email" placeholder="Enter your email address.." required>
+                    <br><br>
+                    <label for="glevel"><span>Grade Level:</span></label>
+                    <br>
+                    <select id="glevel" name="glevel" required>
+                        <option value="none">Select Your Grade Level</option>
+                        <option value="9th">9th Grade</option>
+                        <option value="10th">10th Grade</option>
+                        <option value="11th">11th Grade</option>
+                        <option value="12th">12th Grade</option>
+                    </select>
+                    <br><br>
+                    <label for="section"><span>Section:</span></label>
+                    <br>
+                    <select id="section" name="section" required>
+                        <option value="none">Select Your Section</option>
+                        <option value="section1">Emerald</option>
+                        <option value="section2">Sapphire</option>
+                        <option value="section3">Ruby</option>
+                    </select>
+                    <br><br>
+                    <label><span>Gender:</span></label>
+
+                    <input type="radio" id="male" name="gender" value="male" required>
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="female" required>
+                    <label for="female">Female</label>
+                    <br><br>
+                    <label for="skills"><span>What are your skills?:</span></label>
+                    <br>
+                    <input type="checkbox" id="coding" name="skills" value="coding">
+                    <label for="coding">Coding</label>
+                    <input type="checkbox" id="mechanical" name="skills" value="mechanical">
+                    <label for="mechanical">Mechanical</label>
+                    <input type="checkbox" id="electrical" name="skills" value="electrical">
+                    <label for="electrical">Electrical</label>
+                    <input type="checkbox" id="design" name="skills" value="design">
+                    <label for="design">Design</label>
+                    <input type="checkbox" id="other" name="skills" value="other">
+                    <label for="other">Other</label>
+                    <br><br>
+                    <label for="interest"><span>Why are you interested in joining the OBMC Robotics Club?</span></label>
+                    <br><br>
+                    <textarea id="interest" name="interest" rows="4" placeholder="Share your thoughts here..." required></textarea>
+                    <br><br>
+
+                    <p1>
+	                <h4>Top Robotics Activities We Offer:</h4>
+                    <ul>
+                        <li>Building and programming robots</li>
+                        <li>Participating in robotics competitions</li>
+                        <li>Learning about engineering principles</li>
+                        <li>Collaborating on team projects</li>
+                    </ul> 
+                    <h4>Helpful Resources:</h4>
+                    <ol>
+                        <li><a href="https://www.firstinspires.org/" target="_blank">First Robotics</a></li>
+                        <li><a href="https://www.roboticseducation.org/" target="_blank">Robotics Education & Competition Foundation</a></li>
+                        <li><a href="https://www.robotics.org/" target="_blank">Robotics Industries Association</a></li>
+                    </ol>
+                    </p1>
+                    <br>
+                    <button type="submit" id="btn" name="btn">Submit Application</button>
+                    <input type="reset" id="reset" name="reset" value="Reset">
+                </form>
+            </div>
+    </div>
+<footer id="footer">
+    <p id="foot"> &copy;2026 OBMC Robotics Club. All rights reserved. | Created by Khiane Herrera 9E</p>
+</footer>
+<!--!References:
+    For inspiration and recognition of Science and Technology. FIRST. (2025, June 27). https://www.firstinspires.org/ 
+    RECF. (n.d.). https://recf.org/ 
+    A3 Robotics: Association for Advancing Automation. Automate. (n.d.). https://www.automate.org/robotics 
+    For the background image. LinkedIn. (2025, June 27). https://www.linkedin.com/pulse/revolutionizing-industries-advancements-impact-robotics-zakaria
+    Cowen, A. (2025, March 25). 25+ robotics projects, lessons, and Activities . Science Buddies Blog. https://www.sciencebuddies.org/blog/robotics-lessons 
+</body>
+</html>
